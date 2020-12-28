@@ -81,10 +81,10 @@ function CreateTorProcess() {
        --PidFile "${_proc_dir}/${_arg_socks}.pid" \
        --DataDirectory "${_proc_dir}" \
        --SocksBindAddress 127.0.0.1 \
-       --NewCircuitPeriod 15 \
-       --MaxCircuitDirtiness 15 \
+       --NewCircuitPeriod 5 \
+       --MaxCircuitDirtiness 5 \
        --NumEntryGuards 8 \
-       --CircuitBuildTimeout 5 \
+       --CircuitBuildTimeout 2 \
        --ExitRelay 0 \
        --RefuseUnknownExits 0 \
        --ClientOnly 1 \
